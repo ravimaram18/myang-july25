@@ -1,0 +1,35 @@
+.Calculator{
+    width:30%;
+
+    background-color: whitesmoke;
+}
+span{
+    width:300px;
+    height:50px;
+    background-color: rgb(245, 245, 245);
+    
+}
+.add1{
+    width:50px;
+    height:30px;
+    background-color: rgb(244, 122, 45);
+
+}
+.sub1{
+    width:50px;
+    height:30px;
+    background-color: rgb(244, 122, 45);
+
+}
+.mul1{
+    width:50px;
+    height:30px;
+    background-color:  rgb(244, 122, 45);
+
+}
+.div1{
+    width:50px;
+    height:30px;
+    background-color:  rgb(244, 122, 45);
+
+}
