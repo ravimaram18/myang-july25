@@ -1,0 +1,142 @@
+.parent{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(240, 247, 247);
+    
+   
+}
+body{
+    margin: 0;
+}
+
+h1{
+    display: flex;
+  
+    justify-content: center;
+   
+    margin:0;
+}
+.top{
+    height:40%;
+    width:100% ;
+    background-color:green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.left{
+    height:100%;
+    width:60% ;
+    /* background-color:plum; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+     
+    
+ 
+}
+.topp{
+    height: 25%;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: space-evenly; */
+
+}
+.middle{
+    height: 25%;
+    width: 100%;
+    /* background-color: rgb(255, 0, 0); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.md{
+    height: 25%;
+    width: 100%;
+    /* background-color: rgb(0, 255, 72); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.down{
+    height: 25%;
+    width: 100%;
+    /* background-color: rgb(238, 255, 0); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.right{
+    height:100%;
+    width:40% ;
+    background-color:pink;
+    /* display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+     */
+    
+    
+ 
+}
+.bottom{
+    height: 60%;
+    width: 100%;
+    background-color:blanchedalmond;
+}
+/* button{
+    width: 150px;
+    height: 50px;
+} */
+.pl2h{
+    width: 120px;
+    /* height: 60px; */
+}
+.ph2l{
+    width: 120px;
+    /* height: 60px; */
+}
+.rl2h{
+    width: 120px;
+    /* height: 60px; */
+}
+.rh2l{
+    width: 120px;
+    /* height: 60px; */
+}
+.apd{
+    width: 180px;
+    height: 50px;
+  
+}
+.pdc{
+    width: 250px;
+    height: 50px;
+    
+}
+.tp{
+    width: 200px;
+    height: 50px;
+}
+.tc{
+    width: 200px;
+    height: 50px;
+}
+
+.pri{
+    width: 150px;
+    /* height: 50px; */
+    
+}
+.ss{
+    width: 200px;
+    /* height: 50px; */
+    
+}

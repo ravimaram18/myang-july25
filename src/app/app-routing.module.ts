@@ -11,6 +11,10 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { CircleComponent } from './circle/circle.component';
 import { BMIComponent } from './bmi/bmi.component';
+import { DirectivesComponent } from './directives/directives.component';
+import { EmployeeComponent } from './employee/employee.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
+import { VehiclesComponent } from './vehicles/vehicles.component';
 
 const routes: Routes = [ 
   //default routing
@@ -26,10 +30,17 @@ const routes: Routes = [
      {path:'rectangle', component:RectangleComponent},
      {path:'circle', component:CircleComponent},
      {path:'bmi', component:BMIComponent},
+     {path:'directives', component:DirectivesComponent},
+     {path:'employee', component:EmployeeComponent},
+      {path:'flipkart', component:FlipkartComponent},
+       {path:'vehicles', component:VehiclesComponent},
+     
+
     //  {path:'logout', component:lo},
   ]}, //parent routing
 
-  {path:'**', component:ErrorComponent}, //wildcard/error routing
+  {path:'**', component:ErrorComponent}, //wildcard/error routing, If we give anything below error routing it won't display
+  
 
 ];
 
