@@ -1,0 +1,12 @@
+<h1>flipkartfake </h1>
+<div class="parent">
+    
+    <div class="card" *ngFor="let Flipkart of flips" >
+<img src="{{ Flipkart.image}}"  >
+            <H4>{{ Flipkart.category}}</H4>
+            <H6 style="color:brown;">{{ Flipkart.title}}</H6>
+            <H6 style="color: rgb(255, 0, 0);">Rs. {{ Flipkart.price}}</H6>
+    </div>
+</div>
+
+

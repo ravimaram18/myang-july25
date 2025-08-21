@@ -1,0 +1,7 @@
+<h1>Mails</h1>
+<ol>
+     
+    <li *ngFor="let mails of mails"[ngStyle]="{'color':mails.completed==true?'grey':'black'}">{{mails.completed}}
+        {{mails.title}}
+    </li>
+</ol>

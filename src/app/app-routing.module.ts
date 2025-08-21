@@ -15,6 +15,8 @@ import { DirectivesComponent } from './directives/directives.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
 import { VehiclesComponent } from './vehicles/vehicles.component';
+import { MailComponent } from './mail/mail.component';
+import { FlipkartfakeComponent } from './flipkartfake/flipkartfake.component';
 
 const routes: Routes = [ 
   //default routing
@@ -34,6 +36,8 @@ const routes: Routes = [
      {path:'employee', component:EmployeeComponent},
       {path:'flipkart', component:FlipkartComponent},
        {path:'vehicles', component:VehiclesComponent},
+       {path:'mail', component:MailComponent},
+       {path:'flipkartfake', component:FlipkartfakeComponent},
      
 
     //  {path:'logout', component:lo},

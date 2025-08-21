@@ -1,0 +1,9 @@
+h1{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    
+}
+ol{
+    background-color: wheat;
+}
