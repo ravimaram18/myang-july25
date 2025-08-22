@@ -18,6 +18,7 @@ import { VehiclesComponent } from './vehicles/vehicles.component';
 import { MailComponent } from './mail/mail.component';
 import { FlipkartfakeComponent } from './flipkartfake/flipkartfake.component';
 import { PinterestComponent } from './pinterest/pinterest.component';
+import { CreatevehicleComponent } from './createvehicle/createvehicle.component';
 
 const routes: Routes = [ 
   //default routing
@@ -40,6 +41,7 @@ const routes: Routes = [
        {path:'mail', component:MailComponent},
        {path:'flipkartfake', component:FlipkartfakeComponent},
        {path:'pinterest', component:PinterestComponent},
+       {path:'createvehicle', component:CreatevehicleComponent},
      
 
     //  {path:'logout', component:lo},
