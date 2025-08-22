@@ -22,6 +22,7 @@ import { VehiclesComponent } from './vehicles/vehicles.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MailComponent } from './mail/mail.component';
 import { FlipkartfakeComponent } from './flipkartfake/flipkartfake.component';
+import { PinterestComponent } from './pinterest/pinterest.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { FlipkartfakeComponent } from './flipkartfake/flipkartfake.component';
     FlipkartComponent,
     VehiclesComponent,
     MailComponent,
-    FlipkartfakeComponent
+    FlipkartfakeComponent,
+    PinterestComponent
   ],
   imports: [
     BrowserModule,

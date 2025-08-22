@@ -1,0 +1,56 @@
+H1{
+    background-color: #CDBCDB;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+.parent{
+    height: 100%;
+    width: 100%;
+    background-color:#CDBCDB;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+.card{
+    height: 300px;
+    width: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    border-radius: 10px;
+    overflow: hidden;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+
+
+a{
+      position: absolute;
+      bottom: 10px;
+      left: 5px;
+      background: #f4703e; 
+      color: white;
+      opacity: 0;
+      cursor: pointer;
+}
+.card:hover a{
+      opacity: 1;
+}
+
+
+.hover-text{
+      position: absolute;
+      top: 10px;
+      background: rgb(245, 76, 76); 
+      color: white;
+      opacity: 0;
+      cursor: pointer;
+}
+.card:hover .hover-text{
+      opacity: 1;
+}

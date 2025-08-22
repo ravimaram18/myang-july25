@@ -1,0 +1,10 @@
+<h1>Pinterest</h1>
+<div class="parent">
+    <div class="card" *ngFor="let pinterest of pinteres"> 
+        <!-- <button>click</button> -->
+        <h5><img src="{{pinterest.download_url}}" alt=""></h5>
+         <h4 class="hover-text">{{pinterest.author}}</h4>
+          <a [href]="pinterest.download_url" download class="btn btn-light">Download</a>
+
+    </div>
+</div>
