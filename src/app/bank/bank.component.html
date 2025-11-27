@@ -1,0 +1,29 @@
+<table class="table table-primary">
+    <thead>
+        <tr>
+            <th>Account Name</th>
+            <th>Available Balance</th>
+            <th>Account Number</th>
+            <th>City</th>
+            <th>Profile Picture</th>
+            <th>Ifsc Code</th>
+            <th>Id</th>
+            <th>Option</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let bank of banks">
+            <td>{{bank.account_name}}</td>
+            <td> {{bank.available_balance}}</td>
+            <td> {{bank.account_number}}</td>
+            <td> {{bank.city}}</td>
+            <td><img src="{{bank.profie_picture}}"></td>
+            <td> {{bank.ifsc_code}}</td>
+            <td> {{bank.id}}</td>
+
+            <button class="btn btn-success" routerLink="/dashboard/edit-bank/{{bank.id}}">Edit</button> <br>
+            <button class="btn btn-primary" routerLink="/dashboard/account-details/{{bank.id}}">View</button> <br>
+            <button class="btn btn-danger" (click)="deletebank(bank.id)">Delete</button>
+        </tr>
+    </tbody>
+</table>

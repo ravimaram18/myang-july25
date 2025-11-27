@@ -1,1 +1,16 @@
-<p>login works!</p>
+
+ <div>
+<form [formGroup]="loginform" (ngSubmit)="login()">
+    <h1>login</h1>
+    <label for=""><h2>Email:</h2></label>
+    <input type="text" placeholder="Enter E-mail address" formControlName="username"> <br>
+    
+    <label for=""><h2>Password:</h2></label>
+    <input type="password" placeholder="Enter password" formControlName="password"> <br>
+
+    <button type="submit">login</button> <br>
+    <a href="">Forget password?</a>
+
+
+</form>
+</div>

@@ -1,0 +1,53 @@
+<h1>Students Detail</h1>
+<div class="parent">
+    <div>
+        <input type="text" placeholder="Search Student">
+<select  >
+    <option value="name">Student Name</option>
+    <option value="phone">Mbl No.</option>
+    <option value="city">City</option>
+    <option value="dob">DOB</option>
+    <option value="email">email</option>
+    <option value="id">ID</option>
+    
+</select>
+<select >
+    <option value="asc">Ascending Order</option>
+    <option value="desc">Descending Order</option>
+</select>
+<button class="btn btn-success" >Sort</button>
+
+
+ <select  >
+    <option value="3">3</option>
+    <option value="6">6</option>
+    <option value="9">9</option>
+    <option value="12">12</option>
+    <option value="14">14</option>
+</select>
+<select  >
+    <option value="1">1 </option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+</select>
+<button class="btn btn-success" >Paginate</button>
+    </div>
+    <div class="card" *ngFor="let student of students ">
+        <div class="top"><img src="{{student.school_logo}}" alt="">
+        <h3>{{student.school_name}}</h3></div>
+        
+        <div class="middle">
+            <h4>{{student.name}}</h4>
+            <h4>{{student.phone}}</h4>
+            <h4>{{student.dob}}</h4>
+            <h4>{{student.city}}</h4>
+            <h4>{{student.email}}</h4>
+        </div>
+        <div>
+
+        </div>
+
+    </div>
+</div>

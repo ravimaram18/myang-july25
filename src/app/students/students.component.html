@@ -1,0 +1,105 @@
+<h1>Student's Details</h1>
+<div class="parent">
+    <div class="top">
+       
+       
+<input type="text" placeholder="Search Student">
+<select  >
+    <option value="name">Student Name</option>
+    <option value="phone">Mbl No.</option>
+    <option value="city">City</option>
+    <option value="dob">DOB</option>
+    <option value="email">email</option>
+    <option value="id">ID</option>
+    
+</select>
+<select >
+    <option value="asc">Ascending Order</option>
+    <option value="desc">Descending Order</option>
+</select>
+<button class="btn btn-success" >Sort</button>
+
+
+ <select  >
+    <option value="3">3</option>
+    <option value="6">6</option>
+    <option value="9">9</option>
+    <option value="12">12</option>
+    <option value="14">14</option>
+</select>
+<select  >
+    <option value="1">1 </option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+</select>
+<button class="btn btn-success" >Paginate</button>
+    </div>
+<!-- <div class="down" *ngFor="let students of student">
+        
+
+    <div class="dtop">
+      <div class="dtopr">
+        <img src={{students.school_logo}} alt="" />
+      </div>
+      <div class="dtopl">School Name:{{students.school_name}}</div>
+    </div>
+    <div class="dmiddle">
+      <div class="dmiddlel">
+        <h3>Student Name:{{students.name}}</h3>
+        <h3>Phone:{{students.phone}}</h3>
+        <h3>Date of Birth:{{students.dob}}</h3>
+        <h3>City:{{students.city}}</h3>
+        <h3>Email:{{students.email}}</h3>
+      </div>
+      <div class="dmiddler">
+        <img src={{students.profile_picture}} alt="Profile Picture" />
+      </div>
+    </div>
+    <div class="dbottom">
+      <div class="dbottomup">
+        <h3>School City:{{students.school_city}}</h3>
+        <h3>School Pin:{{students.school_pin}}</h3>
+      </div>
+      <div class="dbottomdown">
+        <button class="btn btn-primary">View</button>
+        <button class="btn btn-success">Edit</button>
+        <button class="btn btn-danger">Delete</button>
+      </div>
+    </div> -->
+    
+  <div class="cards-container" *ngFor="let students of student">
+    <div class="down">
+      <div class="dtop">
+        <div class="dtopr">
+          <img src={{students.school_logo}} alt="School Logo" />
+        </div>
+        <div class="dtopl">School Name:{{students.school_name}}</div>
+      </div>
+      <div class="dmiddle">
+        <div class="dmiddlel">
+          <h3>Student Name:{{students.name}}</h3>
+          <h3>Phone:{{students.phone}}</h3>
+          <h3>Date of Birth:{{students.dob}}</h3>
+          <h3>City:{{students.city}}</h3>
+          <h3>Email:{{students.email}}</h3>
+        </div>
+        <div class="dmiddler">
+          <img src={{students.profile_picture}} alt="Profile Picture" />
+        </div>
+      </div>
+      <div class="dbottom">
+        <div class="dbottomup">
+          <h3>School City:{{students.school_city}}</h3>
+          <h3>School Pin:{{students.school_pin}}</h3>
+        </div>
+        <div class="dbottomdown">
+          <button class="btn btn-primary">View</button>
+          <button class="btn btn-success">Edit</button>
+          <button class="btn btn-danger">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

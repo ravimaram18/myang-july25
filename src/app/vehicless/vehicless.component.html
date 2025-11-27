@@ -1,0 +1,78 @@
+
+<h1>VEHICLES</h1>
+<input type="text" [(ngModel)]="term" (keypress)="filterVehicles()" >
+<label for="">Column:</label>
+<select [(ngModel)]="column">
+    <option value="Vehicle">Vehicle Name</option>
+    <option value="color">Color</option>
+    <option value="type">Type</option>
+    <option value="manufacturer">Manufacturer</option>
+    <option value="cost">Cost</option>
+    <option value="model">Model</option>
+</select>
+<label for="">Order:</label>
+<select [(ngModel)]="order">
+    <option value="asc">Ascending Order</option>
+    <option value="desc">Descending Order</option>
+    
+</select>
+
+<button class="btn btn-warning" (click)="sort()">Sort</button>
+<br><br>
+
+<select [(ngModel)]="limit" >
+    <option value="5">5</option>
+    <option value="10">10</option>
+    <option value="15">15</option>
+    <option value="20">20</option>
+</select>
+
+<select [(ngModel)]="pagenumber" >
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+</select>
+
+<button class="btn btn-success" (click)="pagenation()">Pagenation</button>
+
+
+
+
+<table class="table table-success table-striped">
+    <thead>
+
+        <tr>
+            <th>Id</th>
+            <th> Vehicle</th>
+            <th>manufacturer</th>
+            <th> model</th>
+            <th>color</th>
+            <th>cost </th>
+            <th> type</th>
+            <th> tyres</th>
+            <th> Image</th>
+            <th> Actions</th>
+                    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let vehicle of vehicles">
+            <td>{{vehicle.id}}</td>
+            <td>{{vehicle.Vehicle}}</td>
+            <td>{{vehicle.manufacturer}}</td>
+            <td>{{vehicle.model}}</td>
+            <td>{{vehicle.color}}</td>
+            <td>{{vehicle.cost}}</td>
+            <td>{{vehicle.type}}</td>
+            <td>{{vehicle.tyres}}</td>
+            <td><img src={{vehicle.image}} width="50px" height="50px"></td>
+            <td>
+                <button class="btn btn-primary" routerLink="/dashboard/edit-vehicle/{{vehicle.id}}">Edit</button>
+                <button class="btn btn-success" routerLink="/dashboard/vehicle-details/{{vehicle.id}}">View</button>
+                <button class="btn btn-danger" (click)="deleteVehicle(vehicle.id)">Delete</button>
+            </td>
+            
+        </tr>
+    </tbody>
+</table>

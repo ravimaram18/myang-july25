@@ -1,0 +1,148 @@
+
+<form  [formGroup]="taskform" (ngSubmit)="submit()">
+        <label for="">Name:</label>
+    <input type="text" name="" id="" formControlName="name"> 
+    <div *ngIf="taskform.get('name')?.touched && taskform.get('name')?.invalid">
+        <p class="error" *ngIf="taskform.get('name')?.hasError('required')">Name is required</p>
+        <p class="error" *ngIf="taskform.get('name')?.hasError('pattern')">Invalid Name</p>
+        <p class="error" *ngIf="taskform.get('name')?.hasError('minlength')">Minimum 3 chars required</p>
+        <p class="error" *ngIf="taskform.get('name')?.hasError('maxlength')">Maximum 10 chars allowed</p>
+
+    </div><br>
+
+    
+    <label for="">Salary:</label>
+    <input type="number" name="" id="" formControlName="salary">
+    <div *ngIf="taskform.get('salary')?.touched && taskform.get('salary')?.invalid">
+        <p class="error" *ngIf="taskform.get('salary')?.hasError('required')">Salary is required</p>
+        <p class="error" *ngIf="taskform.get('salary')?.hasError('min')">Minimum 1000rs salary is required</p>
+        <p class="error" *ngIf="taskform.get('salary')?.hasError('max')">Maximum 10L is allowed</p>
+        </div> <br>
+
+    <div formGroupName="company">
+        
+    <label for="">Company Name:</label>
+    <input type="text" name="" id="" formControlName="name"> 
+    <div *ngIf="taskform.get('company')?.get('name')?.touched && taskform.get('company')?.get('name')?.invalid">
+        <p class="error" *ngIf="taskform.get('company')?.get('name')?.hasError('pattern')">Invalid Name</p>
+        <p class="error" *ngIf="taskform.get('company')?.get('name')?.hasError('required')"> Company name is required</p>
+        <p class="error" *ngIf="taskform.get('company')?.get('name')?.hasError('minlength')">Minimum 3 Characters</p>
+        <p class="error" *ngIf="taskform.get('company')?.get('name')?.hasError('maxlength')">Maximum 10 chars allowed</p>
+         </div>
+    <br>
+
+    
+    <label for="">Industry:</label>
+    <input type="text" name="" id="" formControlName="industry"> 
+    <div *ngIf="taskform.get('company')?.get('industry')?.touched && taskform.get('company')?.get('industry')?.invalid">
+        <p class="error" *ngIf="taskform.get('company')?.get('industry')?.hasError('pattern')">Invalid industry</p>
+        <p class="error" *ngIf="taskform.get('company')?.get('industry')?.hasError('required')"> Industry is required</p>
+        <p class="error" *ngIf="taskform.get('company')?.get('industry')?.hasError('minlength')">Minimum 3 Characters</p>
+        <p class="error" *ngIf="taskform.get('company')?.get('industry')?.hasError('maxlength')">Maximum 10 chars allowed</p>
+         </div>
+    <br>
+    
+    <label for="">Size:</label>
+    <input type="text" name="" id="" formControlName="size"> <br>
+    </div>
+
+    <button (click)="addskills()">Skills</button>
+
+    <div formArrayName="skills">
+        <div *ngFor="let skills of skillsFormArray.controls; let i=index">
+
+            <div formGroupName="{{i}}">
+
+                <h5>Skill {{i+1}}</h5>
+
+                <label for="">Name:</label>
+                <input type="text" name="" id="" formControlName="name"> <br>
+
+    
+    <label for="">Level:</label>
+    <input type="text" name="" id="" formControlName="level"> <br>
+
+    <button (click)="delete(i)">delete</button>
+    <hr>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div formGroupName="location">
+        
+    <label for="">City:</label>
+    <input type="text" name="" id="" formControlName="city"> <br>
+
+    
+    <label for="">State:</label>
+    <input type="text" name="" id="" formControlName="state"> <br>
+    
+    <label for="">Country:</label>
+    <input type="text" name="" id="" formControlName="country"> <br>
+    </div>
+
+    
+    <label for="">Workmode:</label>
+    <input type="radio" name="abc"  formControlName="workmode" value="workfromoffice" >
+    <label for="">WorkFromOffice</label>
+    <input type="radio" name="abc"  formControlName="workmode" value="hybrid" >
+    <label for="">Hybrid</label>
+    <input type="radio" name="abc"  formControlName="workmode" value="remote" >
+    <label for="">Remote</label> <br>
+
+    <button (click)="addhikes()">Add Hike</button>
+
+
+    <div formArrayName="hikes" >
+                <div *ngFor="let hikes of hikesFormArray.controls; let i=index">
+
+            <div formGroupName="{{i}}">
+
+                <h5>Hike {{i+1}}</h5>
+        
+    <label for="">Year:</label>
+    <input type="number" name="" id="" formControlName="year"> <br>
+
+    
+    <label for="">Percentage:</label>
+    <input type="percentage" name="" id="" formControlName="percentage"> <br>
+
+    <button (click)="remove(i)">delete</button> <hr>
+
+    
+    </div>
+    </div>
+    </div>
+
+     <label for="">Type:</label>
+    <input type="radio" name="type"  formControlName="type" value="fulltime" >
+    <label for="">Full Time</label>
+    <input type="radio" name="type"  formControlName="type" value="contract" >
+    <label for="">Contract</label> <br>
+
+    <div *ngIf="taskform.get('type')?.value === 'fulltime'">
+    <label for="">Health Insurance Amount</label>
+    <input type="number" name="" id="" formControlName="healthinsuranceamount"> <br>
+    </div>
+
+    <div *ngIf="taskform.get('type')?.value === 'contract'">
+    <label for="">Contract Duration</label>
+    <input type="number" name="" id="" formControlName="contractduration"> <br>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <input type="submit">
+</form>
+<pre>{{taskform.value | json}}</pre>

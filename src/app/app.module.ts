@@ -24,6 +24,17 @@ import { MailComponent } from './mail/mail.component';
 import { FlipkartfakeComponent } from './flipkartfake/flipkartfake.component';
 import { PinterestComponent } from './pinterest/pinterest.component';
 import { CreatevehicleComponent } from './createvehicle/createvehicle.component';
+import { StudentsComponent } from './students/students.component';
+import { VehiclessComponent } from './vehicless/vehicless.component';
+import { BankComponent } from './bank/bank.component';
+import { WeatherComponent } from './weather/weather.component';
+import { StudentssComponent } from './studentss/studentss.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { AccountDetailsComponent } from './account-details/account-details.component';
+import { CreateBankComponent } from './create-bank/create-bank.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { TaskComponent } from './task/task.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +57,18 @@ import { CreatevehicleComponent } from './createvehicle/createvehicle.component'
     MailComponent,
     FlipkartfakeComponent,
     PinterestComponent,
-    CreatevehicleComponent
+    CreatevehicleComponent,
+    StudentsComponent,
+    VehiclessComponent,
+    BankComponent,
+    WeatherComponent,
+    StudentssComponent,
+    CreateVehicleComponent,
+    VehicleDetailsComponent,
+    AccountDetailsComponent,
+    CreateBankComponent,
+    CreateUserComponent,
+    TaskComponent
   ],
   imports: [
     BrowserModule,
