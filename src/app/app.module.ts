@@ -35,6 +35,10 @@ import { AccountDetailsComponent } from './account-details/account-details.compo
 import { CreateBankComponent } from './create-bank/create-bank.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { TaskComponent } from './task/task.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { TextareaComponent } from './textarea/textarea.component';
+import { HighlightComponent } from './highlight/highlight.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +72,11 @@ import { TaskComponent } from './task/task.component';
     AccountDetailsComponent,
     CreateBankComponent,
     CreateUserComponent,
-    TaskComponent
+    TaskComponent,
+    ParentComponent,
+    ChildComponent,
+    TextareaComponent,
+    HighlightComponent
   ],
   imports: [
     BrowserModule,

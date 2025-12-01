@@ -1,0 +1,10 @@
+<h1>parent works!</h1>
+
+<input type="text" [(ngModel)]="count">
+
+<app-child [con]="count" (conChange)="updateCount($event)"> <h1>HELLOWWW CHILD</h1></app-child>
+
+
+<app-textarea [max]="30" (valueChange)="catchMessage($event)"> <p>Enter Paragraph</p></app-textarea>
+
+<app-highlight [color]="'blue'"> <h2>Create User</h2></app-highlight>

@@ -1,0 +1,7 @@
+<h1>textarea works!</h1>
+
+<!-- <h1>{{max}}</h1> -->
+
+<textarea [(ngModel)]="message"  [maxLength]="max" (keyup)="send()" ></textarea>
+
+<ng-content></ng-content>
