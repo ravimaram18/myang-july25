@@ -40,6 +40,7 @@ import { ChildComponent } from './child/child.component';
 import { TextareaComponent } from './textarea/textarea.component';
 import { HighlightComponent } from './highlight/highlight.component';
 import { ButtonComponent } from './button/button.component';
+import { ClickComponent } from './click/click.component';
 
 @NgModule({
   declarations: [
@@ -78,7 +79,8 @@ import { ButtonComponent } from './button/button.component';
     ChildComponent,
     TextareaComponent,
     HighlightComponent,
-    ButtonComponent
+    ButtonComponent,
+    ClickComponent
   ],
   imports: [
     BrowserModule,
