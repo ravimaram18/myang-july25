@@ -32,6 +32,7 @@ import { CreateUserComponent } from './create-user/create-user.component';
 import { TaskComponent } from './task/task.component';
 import { ParentComponent } from './parent/parent.component';
 import { ButtonComponent } from './button/button.component';
+import { ClickComponent } from './click/click.component';
 
 const routes: Routes = [ 
   //default routing
@@ -69,6 +70,7 @@ const routes: Routes = [
       {path:'task', component:TaskComponent},
       {path:'parent', component:ParentComponent},
       {path:'button', component:ButtonComponent},
+      {path:'click', component:ClickComponent},
 
 
 
